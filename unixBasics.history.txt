@@ -1,0 +1,321 @@
+echo $SHELL
+which bash
+exit
+which python
+ls ~/
+which python3
+ls
+cd /bin
+ls
+ls -l
+ls -lt
+man ls
+ls -l
+ls -lt
+ls -lt 
+ls -lt | head
+date; sleep 2; date
+cd ~
+ls
+curl -O https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/cuffdiff.txt\
+
+ls
+grep Chr9 cuffdiff.txt >> fav_chr_cuffdiff.tx
+head fav_chr_cuffdiff.tx
+cat blablabla.txt 2> error.txt
+ls
+less error.txt
+mv fav_chr_cuffdiff.tx fav_chr_cuffdiff.txt
+ls
+cat blablabla.txt 2> error.txt
+less error.txt
+cat blablabla.txt > error.txt
+less error.txt
+cat fav_chr_cuffdiff.txt blablabla.file
+cat fav_chr_cuffdiff.txt blablabla.file 1> out.txt 2> err.txt
+ls
+less err.txt
+less out.txt
+cat fav_chr_cuffdiff.txt blablabla.file > out.txt 2> err.txt
+less out.txt
+less err.txt
+cat fav_chr_cuffdiff.txt blablabla.file &> all_out_err.txt
+less all_out_err.txt
+head all_out_err.txt
+pwd
+cw
+cwl
+ls | wc
+ls
+ls -aF | wc -l
+man w
+man wc
+ls
+mkdir PFB_problemsets
+cd PFB_problemsets
+ls
+pwd
+curl -O https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/sequences.nt.fa
+ls
+wc -l sequences.nt.fa
+man wc
+wc sequences.nt.fa
+man wc
+head sequences.nt.fa
+man tail
+ls
+ls
+man tail
+wc -n 3 sequences.nt.fa
+tail -n 3 sequences.nt.fa
+grep '>' sequences.nt.fa| wc -l
+les sequences.nt.fa
+less sequences.nt.fa
+rm sequences.nt.fa cancer_genes.fasta
+ls
+ls
+curl -O https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/sequences.nt.fa
+ls
+mv sequences.nt.fa cancer_genes.fasta
+ls
+ls ~
+cp ../cuffdiff.txt .
+ls
+ls -l
+head cuffdiff.txt
+man sort
+man sort
+sort -k 10 cuffdiff.txt
+ls
+clear
+ls
+sort -k 10 cuffdiff.txt > sorted.cuffdiff.out
+ls
+head sorted.cuffdiff.out
+awk '{print$10}'sorted.cuffdiff.out | head
+awk '{print$10}'sorted.cuffdiff.out
+awk'{print$10}'sorted.cuffdiff.out
+awk{print$10}sorted.cuffdiff.out
+cat logfile | sed 's/\|/ /'|awk '{print $10}'
+cat sorted.cuffdiff.out | sed 's/\|/ /'|awk '{print $10}'
+cat sorted.cuffdiff.out | sed 's/\|/ /'|awk '{print $10}' | head
+sort -n -r -k 10 cuffdiff.txt > sorted.cuffdiff.out
+cut -f 10 sorted.cuffdiff.out
+cut -f 10 sorted.cuffdiff.out | head
+cut -f 10 sorted.cuffdiff.out | head -n 100
+cut -f 10 sorted.cuffdiff.out | head -n 100 >top100.sorted.cuffdiff.out
+ls
+wc -l top100.sorted.cuffdiff.out
+less top100.sorted.cuffdiff.out
+sort -n -r -k 10 cuffdiff.txt | head -n 100  > top100.sorted.cuffdiff.out
+sort -n -r -k 10 cuffdiff.txt | head -n 100 | cut -f 1 > differentially.expressed.genes.txt
+less differentially.expressed.genes.txt
+less top100.sorted.cuffdiff.out
+wc top100.sorted.cuffdiff.out
+ls
+vi first
+man sort
+man sort
+man head
+ls
+cd PFB_problemsets
+ls
+vi first_file.txt
+vi first_file.txt
+ls
+vi first_file.txt
+ls
+clear
+ls
+cd 
+ls
+cd ~
+ls
+ssh-keygen -t ed25519 -C jorgetzec@gmail.com
+ls
+ls
+ssh-keygen -t ed25519 -C jorgetzec@gmail.com
+eval "$(ssh-agent -s)"
+open ~/.ssh/config
+open ~/.ssh/config
+touch ~/.ssh/config
+open ~/.ssh/config
+vi ~/.ssh/config
+cat  ~/.ssh/id_ed25519.pub
+ls
+cd PFB_problemsets
+echo "# PFB-problemsets_Jorge" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin https://github.com/jorgetzec/PFB-problemsets_Jorge.git\
+git push -u origin main
+echo "# PFB-problemsets_Jorge" >> README.md\
+git init\
+git add README.md\
+git commit -m "first commit"\
+git branch -M main\
+git remote add origin git@github.com:jorgetzec/PFB-problemsets_Jorge.git\
+git push -u origin main
+\
+git remote add origin git@github.com:jorgetzec/PFB-problemsets_Jorge.git
+git push -u origin main
+git remote set-url origin git@github.com:jorgetzec/PFB-problemsets_Jorge.git
+git push -u origin main
+git push -u origin main
+git push -u origin main
+ls
+less README.md
+ls -l
+ls -aF
+pwd
+vi git_exercises.txt
+less git_exercises.txt
+git add git_exercises.txt
+git commit -m 'added a line text'
+git push origin main
+git status
+ls
+vi test1.txt
+ls
+git add test1.txt
+git commit -m 'creating a new test file'
+git status
+git push origin main
+git status
+cd ~
+ls
+pwd
+git clone git@github.com:prog4biol/pfb2024.git
+ls
+cd pfb2024
+ls
+ls -lh
+ls TOC
+ls
+cd ../../
+ls
+cd ~
+ls
+cd pfb2024
+ls
+cd ..
+ls
+cd pfb2024
+ls
+git pull
+cd ~
+ls
+mv *.txt PFB_problemsets
+ls
+cd PFB_problemsets
+ls
+less test1.txt
+git status
+git add *.txt
+git commit -m 'adding unix01 problem set files'
+git push
+git status
+git add cancer_genes.fasta sorted.cuffdiff.out top100.sorted.cuffdiff.out
+git commit -m 'adding unix01 problem set files-part2'
+git push
+ls
+git status
+mkdir files
+ls
+ls -l
+git rm test1.txt
+ls
+ls -lh
+mv *.txt files
+ls
+mv cancer_genes.fasta files
+mv sorted.cuffdiff.out files
+mv top100.sorted.cuffdiff.out files
+ls
+cd files
+ls
+mv git_exercises.txt ../.
+ls
+ls ../
+ls
+ls
+cd ..
+ls
+ mv files/*txt .
+ls
+ls files
+ mv files/sorted.cuffdiff.out .
+ mv files/top100.sorted.cuffdiff.out .
+ls
+ls
+ls files
+cd
+ls
+cd PFB_problemsets
+ls
+git add files/cancer_genes.fasta
+git commit -m 'adding cancer_genes.fasta'
+git push
+git status
+ls
+ls files
+git status
+git push
+ls files
+ls -lh
+ls
+git rm cancer_genes.fasta
+git commit 'removing cancer genes fasta'
+git commit -m 'removing cancer genes fasta'
+git push
+ls
+vi mysequence.txt
+ls
+git add mysequence.txt
+git commit -m 'ading sequence file'
+git push
+ls
+mkdir fasta
+ls
+ls
+mv files/cancer_genes.fasta /fasta
+ls
+ls files
+ls
+ls files
+ls
+mv files/cancer_genes.fasta fasta
+ls
+ls fasta
+ls files
+git add fasta/cancer_genes.fasta
+git commit -m 'changing directory of cancer genes' 
+git push
+git rm files/cancer_genes.fasta
+git commit -m 'removing cancer genes'
+git push
+git status
+ls
+vi oops
+git add oops
+git commit -m oops
+git push
+git rm oops
+git commit -m 'removing oops'
+git push
+vi never
+git add never
+git stat
+git status
+git reset never
+git status
+man rm
+mkdir test
+ls
+rm -d test
+ls
+ls -aF
+man sort
+man cut
