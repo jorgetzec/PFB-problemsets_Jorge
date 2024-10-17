@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
 
-# --- Problem 8
+# --- Problem 9
 
 # In the bash
-# curl -O https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/Python_06.fastq
+# curl -O https://github.com/prog4biol/pfb2024/blob/master/files/Python_06.fasta
 
-countLine=0
-charactNum=0
+import sys
 
-with open("Python_06.fastq", "r") as fq_file_obj:
-    for line in fq_file_obj:
+records = {}
+sequence = ''
+
+with open(sys.argv[1], "r") as fa_file_obj:
+    for line in fa_file_obj:
         line = line.rstrip()
-        countLine +=1
-        charactNum += len(line)
-    averageLine = charactNum/countLine
-print(f'REPORT \nTotal number of lines: {countLine} \nTotal number of characters: {charactNum} \nAverage line length: {averageLine}')
-
-
+        if line.startswith('>'):
+            print(line)
+            sequence = line[1:]
+            records[sequence]= ''
+        else:
+            records[sequence]=line
+print(records)
