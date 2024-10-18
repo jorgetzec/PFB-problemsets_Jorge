@@ -14,9 +14,12 @@ with open(sys.argv[1], "r") as fa_file_obj:
     for line in fa_file_obj:
         line = line.rstrip()
         if line.startswith('>'):
-            print(line)
+            #print(line)
             sequence = line[1:]
             records[sequence]= ''
         else:
             records[sequence]=line
 print(records)
+
+# in the console
+# ./open_r_w_p6_5.py Python_06.fasta
