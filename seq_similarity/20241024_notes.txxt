@@ -1,0 +1,40 @@
+1. Take a look at the output.
+
+How long is the query sequence?
+    217
+How many sequences are in the PIR1 database?
+    13144 sequences
+What scoring matrix was used?
+    BL50 matrix
+What were the gap penalties? (what is the penalty for a one-residue gap? two residues? -- this is a "trick" question)
+    -12
+    increase -2 each gap increase
+What are each of the numbers after the description of the library sequence? Which one is best for inferring homology?
+    E-val
+    simliar: highest than identity
+
+How similar is the highest scoring sequence? What is the difference between %_id and %_sim? Why is there no 100% identity match?
+
+Looking at an alignment, where are the boundaries of the alignment (the best local region)? How many gaps are in the best alignment? The second best?
+
+
+
+
+3. Homologs, non-homologs, and the statistical control.
+
+What is the highest (worst) E()-value shown? What should the highest (worst) E()-value calculated in the search be (approximately)?
+
+Which alignment has the worst statistically significant (E()<0.001) score? Do you think this sequence is likely to be homologous?
+
+What is the highest scoring (most significant) non-homolog? (The non-homolog with the highest alignment score, or the lowest E()-value.) Why do you think it is not homologous? 
+Look for positive evidence (e.g. a non-homologous domain) for non-homology.
+
+You can use the domain diagrams (colors) to identify distant homologs, and, by elimination, the highest scoring non-homolog. You can also use the Sequence Lookup link to Uniprot to look at Domains and Families.
+
+If the statistical estimates are accurate, what should the E()-value for the highest non-homolog (the highest score by chance) be? (This is a control for statistical accuracy.)
+
+What is the E()-value of the most distant homolog shown (based on displayed domain content)? Could there be more distant homologs in the database?
+
+How would you confirm that your candidate non-homolog was truly unrelated? (Hint - compare your candidate non-homolog with SwissProt or QFO78/Uniprot Ref for a more comprehensive test.)
+----
+Dot means similar
