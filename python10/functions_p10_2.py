@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+
+# Problem 2
+
+
+''''
+Modify your function so that it will work whether the DNA string does or does not have newlines.
+
+'''
+import sys
+import re
+
+DNA = '''GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACC
+GTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACG
+CTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCC
+TCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAA
+TGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATG
+CCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCT
+GTCATCTTCT'''
+
+# rawseq=''
+# for line in dna:
+#     line = line.rstrip()
+#     rawseq+=line
+# print(rawseq)
+
+def DNA_format(dna):
+    rawseq=''
+    for line in dna:
+        line = line.rstrip()
+        rawseq+=line
+        newline = re.findall(r'(.{30})', rawseq)
+        DNA_new= '\n'.join(newline)
+    return DNA_new
+
+print(DNA_format(DNA))
