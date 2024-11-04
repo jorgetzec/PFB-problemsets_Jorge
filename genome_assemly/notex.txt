@@ -1,0 +1,7 @@
+## Notes
+For installation: https://github.com/marbl/canu/releases/tag/v2.2
+
+Read about:
+
+canu -p ecoli -d ecoli-pacbio genomeSize=4.8m -pacbio-raw pacbio.fastq saveReads=true > Canu_20241023.out 2>Canu_Run20241023.log
+canu -p ecoli-60 -d ecoli-pacbio-60 genomeSize=4.8m -pacbio-raw pacbio_0.60.fastaq saveReads=true > Canu-60_20241023.out 2>Canu60-_Run20241023.log 
